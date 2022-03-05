@@ -1,13 +1,16 @@
 import "../styles/globals.css";
-// import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 function MyApp({ Component, pageProps }) {
   return (
-    // <PayPalScriptProvider options={{ "client-id": "test" }}>
-      <Component {...pageProps} />
-      {/* <PayPalButtons style={{ layout: "horizontal" }} />   */}
-    {/* </PayPalScriptProvider> */}
-  );
-}
+    <Component {...pageProps} />
+    );
+  }
+  
+  export default MyApp;
 
-export default MyApp;
+  
+  // import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+  // <PayPalScriptProvider options={{ "client-id": "test" }}>
+
+    {/* <PayPalButtons style={{ layout: "horizontal" }} />   */}
+  {/* </PayPalScriptProvider> */}
