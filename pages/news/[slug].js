@@ -22,7 +22,7 @@ export default function SingleNews({ news }) {
           </div>
         )}
         <p>{news.detail}</p>
-        <Link href="/news">
+        <Link href='/news'>
           <a className={styles.back}>Go Back</a>
         </Link>
       </div>

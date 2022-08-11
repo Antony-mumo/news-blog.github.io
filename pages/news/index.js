@@ -13,7 +13,7 @@ export default function News({ news }) {
         {news.map((item) => (
           <NewsItem key={item.id} news={item} />
         ))}
-        <Link href="/">
+        <Link href='/'>
           <a className={styles.back}>Go Back</a>
         </Link>
       </Layout>
@@ -22,7 +22,7 @@ export default function News({ news }) {
 }
 
 // export async function getServerSideProps() {
-//   const res = await fetch(`${API_URL}/api/news`);
+//   const res = await axios.get(`${API_URL}/api/news`);
 //   const news = await res.json();
 
 //   return {
